@@ -109,4 +109,14 @@ img_out_1 = cv2.filter2D(img_in, -1, kernel)
 cv2_imshow(img_in)
 
 # Exibir a imagem resultante após a aplicação do filtro usando a função cv2_imshow()
+
+RESUMO:
+O código mostra exemplos de operações de ponto e filtros usando a biblioteca OpenCV em Python. Aqui está uma descrição das funcionalidades implementadas:
+Carregar e exibir uma imagem usando a função cv2_imshow() ou plt.imshow().
+Converta a imagem para grayscale usando a função cv2.cvtColor().
+Separe os canais de cor (B, G, R) de uma imagem de cor usando a função cv2.split().
+Calcule uma versão ponderada na escala cinzenta da imagem usando a fórmula 0.299*B + 0.587*G + 0.114*R.
+Criar uma imagem negativa inverter os valores de pixel.
+
+
 cv2_imshow(img_out_1)
