@@ -111,12 +111,14 @@ cv2_imshow(img_in)
 # Exibir a imagem resultante após a aplicação do filtro usando a função cv2_imshow()
 
 RESUMO:
-O código mostra exemplos de operações de ponto e filtros usando a biblioteca OpenCV em Python. Aqui está uma descrição das funcionalidades implementadas:
-Carregar e exibir uma imagem usando a função cv2_imshow() ou plt.imshow().
-Converta a imagem para grayscale usando a função cv2.cvtColor().
-Separe os canais de cor (B, G, R) de uma imagem de cor usando a função cv2.split().
-Calcule uma versão ponderada na escala cinzenta da imagem usando a fórmula 0.299*B + 0.587*G + 0.114*R.
-Criar uma imagem negativa inverter os valores de pixel.
-
-
-cv2_imshow(img_out_1)
+O código fornecido é um exemplo de usar a biblioteca OpenCV em Python para executar operações de ponto e filtros em imagens. Ele visa demonstrar diferentes etapas e técnicas no processamento de imagens, usando uma imagem como exemplo.
+Primeiro, são importadas as bibliotecas necessárias para o processamento de imagens: OpenCV, NumPy e Matplotlib. Estas bibliotecas oferecem uma ampla gama de funcionalidades para manipulação de imagens e visualização.
+O próximo passo é carregar a imagem que será processada. A função cv2.imread() é usada para ler a imagem a partir de seu caminho de arquivo específico. A imagem é então armazenada em uma variável chamada "imagem".
+Depois de carregar a imagem, a função cv2_imshow() (ou plt.imshow () em outros ambientes) é usada para exibir a imagem original na tela. Isso nos permite visualizar a imagem antes de qualquer processamento ser aplicado.
+Em seguida, a imagem é convertida para grayscale usando a função cv2.cvtColor(), que realiza a conversão do espaço de cores BGR para a escala de cores. Este passo é útil quando se trabalha com a imagem em preto e branco, sem o componente de cor.
+A imagem de escala cinzenta é então exibida novamente usando a função cv2_imshow(), permitindo-nos visualizar a imagem em sua nova representação de escala Cinzenta.
+A partir deste ponto, é possível realizar diferentes operações de ponto ou aplicar filtros à imagem de escala cinzenta. Por exemplo, cálculos ponderados podem ser realizados para obter uma nova versão da imagem usando pesos diferentes para os canais de cor. As transformações lineares também podem ser aplicadas para alterar o contraste ou brilho da imagem. Além disso, os filtros podem ser aplicados para suavizar ou melhorar certas características da imagem.
+Depois de processar a imagem, o resultado é exibido novamente usando a função cv2_imshow(), permitindo uma comparação entre a imagem original e a imagem processada.
+Para visualizar os resultados e interagir com as janelas, o comando cv2.waitKey(0) é usado, que aguarda até que uma chave seja pressionada. Isso permite que o usuário observe os resultados antes de proceder.
+Finalmente, a função cv2.destroyAllWindows() é chamada para fechar todas as janelas abertas pelo programa.
+Este código é apenas um exemplo básico e pode ser expandido e adaptado de acordo com necessidades específicas de processamento de imagens. As técnicas apresentadas são fundamentais no campo do processamento de imagens e têm diversas aplicações em áreas como visão por computador, reconhecimento de padrões e processamento médico de imagens.
