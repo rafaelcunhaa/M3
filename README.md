@@ -34,5 +34,6 @@ No exemplo dado, o treinamento é realizado por 10 épocas. Os valores de perda 
 
 Após o treinamento, o modelo treinado pode ser usado para fazer previsões sobre novos dados e avaliar sua precisão contra os rótulos verdadeiros.
 
-https://github.com/rafaelcunhaa/M3/blob/main/README.md
 É importante notar que os resultados específicos podem variar dependendo do conjunto de dados e da complexidade do problema. O objetivo é alcançar um modelo com baixa perda e alta precisão, capaz de generalizar bem para dados invisíveis.
+
+https://github.com/rafaelcunhaa/M3/blob/main/README.md
